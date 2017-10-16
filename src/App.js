@@ -7,6 +7,7 @@ import SignupPage from './components/auth/SignupPage';
 import IndexPage from './components/index/IndexPage';
 import './App.css';
 import './assets/global.css';
+
 class App extends Component {
   render() {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 class Navbar extends Component {
     componentDidMount() {
        
@@ -16,13 +16,13 @@ class Navbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <Link className="nav-link" to="/signup">Sign up</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" href="#">Disabled</a>
+                                <Link className="nav-link" to="/login">Sign in</Link>
                             </li>
                             </ul>
                             <form className="form-inline my-2 my-lg-0">
